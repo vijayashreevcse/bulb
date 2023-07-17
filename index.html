@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light{
+            height:450px;
+            width: 350px;
+            margin-left: 100PX;
+            margin-top: 40PX;
+        }
+        .h1{
+          color: rgb(176, 7, 117);
+          height: 50px;
+          margin-left: -200px;
+         
+        }
+          .border{
+                   border:3px solid black;
+                   width: 500px;
+                   margin-left: 400px;
+                   background-color: rgb(235, 247, 248);
+                   border-radius: 100px;
+          }
+         
+       
+       .on{
+        margin-left: 70px;
+           height: 40px;
+           width: 40px;
+           border-radius: 10px;
+
+       }
+       .off{
+         margin-left: 280px;
+           height: 40px;
+           width: 40px;
+           border-radius: 10px;
+       }
+       
+       
+    </style>
+   <center> <h1 class="h1"> Bulb </h1></center>
+</head>
+<body>
+  <div class="border">
+    <img id="b" class="light" src="./offbulb.jpg"alt=""><br><br>
+   
+    <BUtton id="on" onclick="turnon()" class="on">ON</BUtton>
+    <button id="off" onclick="turnoff()" class="off">OFF</button>
+  </div>
+    <script>
+     function turnon(){
+        document.getElementById('b').src="./onbulb.jpg";
+     }
+     function turnoff(){
+        document.getElementById('b').src="./offbulb.jpg";
+     }
+         
+    </script>
+</body>
+</html>
+
